@@ -17,5 +17,12 @@
   padding: 20px 20px 20px 40px;
   box-shadow: 0 0 10px rgb(90, 88, 88);
   border-radius: 20px;
-  min-height: 250px;
+}
+@mixin style-animation-block {
+  color: rgb(90, 88, 88);
+  transition: all 1s linear;
+
+  animation-timing-function: linear;
+  padding: 5px;
+  width: 90%;
 }
