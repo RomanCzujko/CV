@@ -518,10 +518,7 @@ body {
 .soft-scills {
   color: #5a5858;
   transition: all 1s linear;
-  box-shadow: 0 0 10px #5a5858;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 5px;
+  padding: 5px;
   width: 90%;
 }
 
@@ -532,8 +529,7 @@ body {
 }
 
 .skill,
-.add-skills,
-.soft-scills {
+.add-skills {
   color: #5a5858;
   transition: 4s;
 }
@@ -547,14 +543,40 @@ body {
 
 .item-title {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.item-wraper {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 10px #5a5858;
+  border-radius: 20px;
+  min-height: 250px;
+  padding: 40px 20px 40px 10px;
+}
+
+.item-wraper ul:last-child {
+  border-left: 2px solid #a09a9a;
 }
 
 .item-text {
+  font-size: 14px;
+  width: 100%;
+  padding: 20px 20px 20px 40px;
+  box-shadow: 0 0 10px #5a5858;
+  border-radius: 20px;
+  min-height: 250px;
+}
+
+.item-text--skills {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.item-text-list__skills {
   font-size: 16px;
-  width: 90%;
-  padding: 5px;
-  margin: 20px auto;
+  font-family: "Lato Bold";
 }
 
 .footer-info {
@@ -668,6 +690,15 @@ body {
     transform: rotate(90deg);
     top: 0;
     background-color: #fff;
+  }
+
+  .item-wraper {
+    flex-direction: column;
+  }
+
+  .item-wraper ul:last-child {
+    border: none;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 767px) {
