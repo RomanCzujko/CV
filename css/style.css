@@ -582,6 +582,22 @@ body {
   transition: 4s;
 }
 
+.about:hover,
+.experience:hover,
+.skill:hover,
+.add-skills:hover {
+  transform: scale(1.05, 1.05);
+  transition: 2s;
+}
+
+.about::not(:hover),
+.experience::not(:hover),
+.skill::not(:hover),
+.add-skills::not(:hover) {
+  transform: scale(1, 1);
+  transition: 2s;
+}
+
 .item-title {
   text-align: center;
   font-size: 26px;
